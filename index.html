@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nothing here </p>
+
+<p>Its my first immage </p>
+<img src="images/imm1.jpg"
+width="120" height="100"/>
+<title> Hello world </title>
+
+<ul>
+    <li>CofeTea</li>
+    <li>Milk</li>
+</ul>
+<ol type="A">
+    <li>Cofe</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+
+<table border="1"  >
+    <caption>Виписка з рахунку</caption>
+    <tr>
+    <td><b>Місяць</b></td>
+    <td><b>Баланс</b></td>
+    </tr>
+    <tr>
+        <td><b>Cічень</b></td>
+        <td><b>500грн</b></td>
+    </tr>
+    </table>
+</table>
+
+
+<table border="1">
+    <tr>
+        <td rowspan="3">First</td>
+    </tr>
+    <tr>
+        <td colspan="2">Second</td>
+    </tr>
+    <tr>
+        <td>Third</td>
+        <td>Fourth</td>
+    </tr>
+</table>
+
+<form action="/action" ac>
+    <input type="text" name="Login"  value="Enter you Login"/>
+    <input type="text" name="Password"  value="Enter your password" />
+    <input  type="submit" name="submit" value="Submit"/>
+</form>
+<script>
+    alert("Hello world");
+</script>
+
+<script src="first.js"></script>
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button"
+        onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">
+    Click Me!</button>
+
+<script>
+
+    document.writeln();
+    document.writeln("</br>Write something");
+
+</script>
+<script>
+
+    var years = prompt('Сколько вам лет?', 100);
+    alert('Вам ' + years + ' лет!');
+    document.write(years)
+
+</script>
+
+<script>
+
+    document.writeln("</br>Вам ", years, " років");
+</script>
+
+<script>
+    var isAdmin = confirm("Вы - администратор?");
+    if (isAdmin==true)
+        isAdmin="YES - I`m system administrator";
+    else isAdmin="NO - I`m not system administrator";
+
+    alert( isAdmin );
+
+
+    document.write("</br> You click - ",isAdmin );
+</script>
+
+<script> //сумуэ числа ы виводить їх
+    var sum = 0;
+
+    while (true) {
+
+        var value = +prompt("Введите число", '');
+        document.write("</br>Ви ввели - ",value);
+
+        if (!value) break; // (*)
+
+
+        sum += value;
+        document.write("</br>Поточна сумма - ", sum);
+    }
+    document.write("</br>Загальна сумма - ", sum);
+    alert( 'Загальна сумма: ' + sum );
+</script>
+<script>
+    var name = prompt("Як Вас звати?", 'Name' )
+    alert(name);
+    document.write("</br>Your name is - ", name);
+</script>
+
+</body>
+</html>
